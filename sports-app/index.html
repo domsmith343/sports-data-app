@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFL Player Stats</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="container">
+        <h1>Find NFL Player</h1>
+
+        <form id="search-form">
+            <input type="text" id="player-name" placeholder="Search for a player..." />
+            <button type="submit">Search</button>
+        </form>
+
+        <section id="player-stats" hidden>
+            <h2 id="player-name-display"></h2>
+            <p><strong>Team:</strong> <span id="player-team"></span></p>
+            <p><strong>Position:</strong> <span id="player-position"></span></p>
+            <p><strong>Passing Yards:</strong> <span id="player-passing-yards"></span></p>
+            <p><strong>Rushing Yards:</strong> <span id="player-rushing-yards"></span></p>
+            <p><strong>Receiving Yards:</strong> <span id="player-receiving-yards"></span></p>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
